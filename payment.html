@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Admin Panel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="colBg" onload="loadPayment('http://localhost:8080/ElectroGrid/rest/payments')">
+    <div class="sidebar">
+        <div class="column left" id="includedContent">
+
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="topic">
+            <h2>Payment Details</h2>
+        </div>
+        <div class="wrapper mt-lg-3">
+            <div class="formContainer"> 
+                <form action="http://localhost:8080/ElectroGrid/rest/payments" method="POST"  id="submitForm">
+                    <div class="row centerCont">
+                        <div class="col col-lg-6 col-md-10 col-xs-11">
+                            <div class="row centerCont">
+                                <div class="col col-lg-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Pay Option</label>
+                                </div>
+                                <div class="col col-lg-7">
+                                    <input type="text" class="form-control" name="payOptions" required id="exampleFormControlInput1" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 col-md-10 col-xs-11">
+                            <div class="row centerCont">
+                                <div class="col col-lg-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Customer Name</label>
+                                </div>
+                                <div class="col col-lg-7">
+                                    <input type="text" class="form-control" name="customerName" required id="exampleFormControlInput1" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row centerCont">
+                        <div class="col col-lg-6 col-md-10 col-xs-11">
+                            <div class="row centerCont">
+                                <div class="col col-lg-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Total Payment</label>
+                                </div>
+                                <div class="col col-lg-7">
+                                    <input type="number" class="form-control" name="totalPayment" required id="exampleFormControlInput1" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 col-md-10 col-xs-11">
+                            <div class="row centerCont">
+                                <div class="col col-lg-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Customer ID</label>
+                                </div>
+                                <div class="col col-lg-7">
+                                    <input type="number" class="form-control" name="customerId" min="0" required id="exampleFormControlInput1" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row centerCont">
+                        <div class="col col-lg-6 col-md-10 col-xs-11">
+                            <div class="row centerCont">
+                                <div class="col col-lg-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Card Name</label>
+                                </div>
+                                <div class="col col-lg-7">
+                                    <input type="text" class="form-control" name="cardName" required id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                </div>
+                            </div>
+                        <div class="col col-lg-6 col-md-10 col-xs-11">
+                            <!-- <div class="row centerCont">
+                                <div class="col col-lg-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Age</label>
+                                </div>
+                                <div class="col col-lg-7">
+                                    <input type="number" class="form-control" name="age" min="0" required id="exampleFormControlInput1" placeholder="">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="row centerCont">
+                        <div class="col col-lg-6 col-md-10 col-xs-11">
+                            <!-- <div class="row centerCont">
+                                <div class="col col-lg-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                </div>
+                                <div class="col col-lg-7">
+                                    <input type="email" class="form-control" name="email" required id="exampleFormControlInput1" placeholder="example@gmail.com">
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col col-lg-6 col-md-10 col-xs-11">
+                            <!-- <div class="row centerCont">
+                                <div class="col col-lg-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Gender</label>
+                                </div>
+                                <div class="col col-lg-7">
+                                    <input type="text" class="form-control" name="address" required id="exampleFormControlInput1" placeholder="">
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="row centerCont">
+                            <div class="d-grid gap-2 col-2 mx-auto pt-3">
+                                <button class="btn btnSubmit btn-sm">Add New Payment Method</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+        <div class="tblContainer">
+            <div class="row centerCont">
+                <div class="col col-lg-11 col-md-10 col-xs-11">
+                    <table class="table table-primary table-hover table-responsive">
+                        <thead>
+                            <tr class=" table-primary">
+                                <th scope="col">Pay Option</th>
+                                <th scope="col">Total Payment</th>
+                                <th scope="col">Card Name</th>
+                                <th scope="col">Customer Name</th>
+                                <th scope="col">Customer ID</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $(function() {
+            $("#includedContent").load("nav.html");
+        });
+    </script>
+    <!-- // INCLUDE THIS -->
+</body>
+<script src="js/payment.js"></script> 
+
+</html>

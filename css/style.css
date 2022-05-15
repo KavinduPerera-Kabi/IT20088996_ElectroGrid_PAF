@@ -1,0 +1,318 @@
+.colBg {
+  background: #e4e0e0 !important;
+}
+
+.pg1 {
+  background-image: url(https://cdn.luxe.digital/media/2020/12/15110747/fastest-cars-world-2021-luxe-digital%402x.jpg);
+}
+
+.pg2 {
+  background-image: url(https://www.motortrend.com/uploads/sites/5/2020/10/2021-SSC-Tuatara-Reruns-Record-Car-Front-3.4.jpg?fit=around%7C875:492);
+}
+
+.topic {
+  position: absolute;
+  top: 10px;
+}
+
+.topic h2 {
+  color: #1a213a;
+  text-align: start;
+  margin: 0 0 0 20px;
+}
+
+.wrapper {
+  padding: 20px;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #e4e0e0b9;
+}
+
+.loginContainer {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  background: #ffffff;
+  -webkit-box-shadow: 9px 9px 28px #d1d1d1, -9px -9px 28px #e9e9e9;
+  box-shadow: 9px 9px 28px #d1d1d1, -9px -9px 28px #e9e9e9;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+
+.loginContainer .form-select,
+.loginContainer .form-control {
+  font-size: 14px;
+  font-weight: 600;
+  color: #151414;
+  background: #e6e2e2;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.loginBox,
+.loginTxtBox {
+  max-width: 300px;
+  padding: 50px 20px 50px 0px;
+}
+
+.loginBox {
+  text-align: center;
+}
+
+h5 {
+  margin-bottom: 20px;
+}
+
+.borTop {
+  border-top: 1px solid #14131c;
+}
+
+.btnlogin {
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #1a213a;
+  color: #fff;
+  border-radius: 20px;
+  padding-bottom: 3px;
+}
+
+.btnlogin:hover {
+  background: #212a4a;
+  color: #fff;
+}
+
+.formContainer {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  background: #ffffff;
+  -webkit-box-shadow: 9px 9px 28px #d1d1d1, -9px -9px 28px #e9e9e9;
+  box-shadow: 9px 9px 28px #d1d1d1, -9px -9px 28px #e9e9e9;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+
+.formContainer label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2e2d2d;
+}
+
+.formContainer .form-select,
+.formContainer .form-control {
+  font-size: 14px;
+  font-weight: 600;
+  color: #373737;
+  background: #e6e2e2;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.tblContainer {
+  width: 100%;
+  border-radius: 8px;
+  background: #ffffff;
+  -webkit-box-shadow: 9px 9px 28px #d1d1d1, -9px -9px 28px #e9e9e9;
+  box-shadow: 9px 9px 28px #d1d1d1, -9px -9px 28px #e9e9e9;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+
+.tblContainer tr {
+  text-align: center;
+}
+
+.tblContainer tr td {
+  padding-top: 10px;
+}
+
+.flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.form-select {
+  border-radius: 10px !important;
+}
+
+.sidebar {
+  top: 0;
+  width: 240px;
+  position: fixed;
+  height: 100%;
+  background: #1a213a;
+  -webkit-transition: width 300ms;
+  transition: width 300ms;
+  z-index: 100;
+}
+
+.sidebar .nav-link {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  color: #d3d4d5;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+  color: #ffffff;
+}
+
+.sidebar .nav-link:active {
+  color: #373737;
+}
+
+.sidebar #submenu1,
+.sidebar #submenu2,
+.sidebar #submenu3,
+.sidebar #submenu4 {
+  padding-left: 1rem;
+}
+
+.sidebar #submenu1 .nav-link,
+.sidebar #submenu2 .nav-link,
+.sidebar #submenu3 .nav-link,
+.sidebar #submenu4 .nav-link {
+  font-size: 14px;
+  display: block;
+  padding: 0.5rem 0.7rem;
+  color: #88b4ff;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.sidebar #submenu1 .nav-link:hover,
+.sidebar #submenu2 .nav-link:hover,
+.sidebar #submenu3 .nav-link:hover,
+.sidebar #submenu4 .nav-link:hover {
+  color: #ffffff;
+}
+
+.sidebar #submenu1 .nav-link:active,
+.sidebar #submenu2 .nav-link:active,
+.sidebar #submenu3 .nav-link:active,
+.sidebar #submenu4 .nav-link:active {
+  color: #373737;
+}
+
+.main-content {
+  margin-left: 240px;
+  -webkit-transition: margin-left 300ms;
+  transition: margin-left 300ms;
+}
+
+.btnSubmit {
+  margin-top: 5px;
+  background: #1a213a;
+  color: #e4e0e0;
+  border-radius: 10px;
+}
+
+.btnSubmit:hover {
+  color: #ffffff;
+}
+
+.centerCont {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.flexList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.flexList li button {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flexList li button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 70px;
+  }
+  .sidebar .nav-link span {
+    display: none !important;
+  }
+  .main-content {
+    margin-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    width: 70px;
+  }
+  .sidebar .nav-link span {
+    display: none !important;
+  }
+  .main-content {
+    margin-left: 70px;
+  }
+}
+
+.left-text {
+  text-align: left !important;
+  padding-bottom: 10px;
+}
+
+.left-text label {
+  color: #1a213a;
+  font-size: 14px;
+}
+
+.img-responsive {
+  width: 100px;
+}
+
+/*# sourceMappingURL=hospital.css.map */
